@@ -1,0 +1,31 @@
+.add-recipe {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.add-recipe form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.add-recipe input, 
+.add-recipe textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-recipe button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(245, 37, 9);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
