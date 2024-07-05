@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse delicious recipes and find cooking inspiration.">
+    <meta name="keywords" content="recipes, cooking, food, culinary, delicious">
+    <title>Interactive Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Delecious Recipes<span class="smiley">&#128523;</span></h1>
+            <nav>
+                <div class="menu-Icon">&#9776;</div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="Admin-panel.html">AdminPanel</a></li>
+                    <li><a href="#" id="login-button" class="button">Log-in</a></li>
+                </ul>
+            </nav>
+         </div>   
+    </header>
+        <section class="hero">
+            <div class="hero-section">
+                <h2><i>Welcome to our recipe collection !</i></h2>
+                <p>Search mouth watering recipes to satisfy your craving.</p>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Search Recipe" id="search-box">
+                    <button type="button" id="search-btn">Search</button>
+                </form>
+                 <div id="result"></div>
+            </div>
+        </section>
+        <section class="recipes">
+            <h1>Featured Recipes</h1>
+            <button id="add-recipe-button" class="plus-icon"><ion-icon name="add-circle-outline"></ion-icon></button>
+            <div class="recipe-section">
+                <div class="recipe-card">
+                <img src="image1.jfif" alt="Strawberry Custard">
+                <h2><u>Strawberry Custard</u></h2>
+                <p>Strawberries are in season now. so it is important to make use of them to the most. This custard made with cream is simply glorious, sweetly scented with fresh strawberries but with all the cosy homemade vibes.</p>
+                <button class="view-recipe">View</button>
+                <button class="edit-recipe">Edit</button>
+                <button class="delete-recipe">Delete</button>
+                <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients"><li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+            <!-- List items for ingredients dynamically added here -->
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions"> <li>Instruction 1</li>
+                        <li>Instruction 2</li>
+                        <li>Instruction 3</li>
+            <!-- List items for instructions dynamically added here -->
+        </ol>
+        <p><strong>Cooking Time:</strong> <span class="cooking-time"></span></p>
+        <p><strong>Difficulty Level:</strong> <span class="difficulty"></span></p>
+        <p><strong>Author:</strong> <span class="author"></span></p>
+    </div>
+                </div>
+                <div class="recipe-card">
+                <img src="image2.webp" alt="">
+                <h2><u>New York-Style Crumb Cake</u></h2>
+                <p>This is mega buttery and moist New York-style crumb cake with EXTRA brown sugar cinnamon crumb topping. Yes, the crumb topping is just as thick as the cake layer! The topping is soft, not crunchy, and the cake is perfectly sweet.</p>
+                <button class="view-recipe">View</button>
+                <button class="edit-recipe">Edit</button>
+                <button class="delete-recipe">Delete</button>
+                <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients"><li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+            <!-- List items for ingredients dynamically added here -->
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions"> <li>Instruction 1</li>
+                        <li>Instruction 2</li>
+                        <li>Instruction 3</li>
+            <!-- List items for instructions dynamically added here -->
+        </ol>
+        <p><strong>Cooking Time:</strong> <span class="cooking-time"></span></p>
+        <p><strong>Difficulty Level:</strong> <span class="difficulty"></span></p>
+        <p><strong>Author:</strong> <span class="author"></span></p>
+    </div>
+                </div>
+                <div class="recipe-card">
+                <img src="image3.webp" alt="">
+                <h2><u>The Viral Crookie</u></h2>
+                <p>The crookie fuses the comfort of a chocolate-chip cookie and the flakiness of a croissant with hunks of rich cookie dough baked into the pastry. Soft and chewy meets delicate and buttery, making for the most luxurious of bites.</p>
+                <button class="view-recipe">View</button>
+                <button class="edit-recipe">Edit</button>
+                <button class="delete-recipe">Delete</button>
+                <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients"><li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+            <!-- List items for ingredients dynamically added here -->
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions"> <li>Instruction 1</li>
+                        <li>Instruction 2</li>
+                        <li>Instruction 3</li>
+            <!-- List items for instructions dynamically added here -->
+        </ol>
+        <p><strong>Cooking Time:</strong> <span class="cooking-time"></span></p>
+        <p><strong>Difficulty Level:</strong> <span class="difficulty"></span></p>
+        <p><strong>Author:</strong> <span class="author"></span></p>
+    </div>
+                </div>
+                <div class="recipe-card">
+                <img src="image4.webp" alt="">
+                <h2><u>Rough Puff Pastry</u></h2>
+                <p>This rough puff pastry dough bakes up deliciously light and flaky. It's quick to make compared to classic puff pastry — most of the time is for chilling.</p>
+                <button class="view-recipe">View</button>
+                <button class="edit-recipe">Edit</button>
+                <button class="delete-recipe">Delete</button>
+                <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients"><li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+            <!-- List items for ingredients dynamically added here -->
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions"> <li>Instruction 1</li>
+                        <li>Instruction 2</li>
+                        <li>Instruction 3</li>
+            <!-- List items for instructions dynamically added here -->
+        </ol>
+        <p><strong>Cooking Time:</strong> <span class="cooking-time"></span></p>
+        <p><strong>Difficulty Level:</strong> <span class="difficulty"></span></p>
+        <p><strong>Author:</strong> <span class="author"></span></p>
+    </div>
+    </div>
+                <div class="recipe-card">
+                <img src="image5.webp" alt="">
+                <h2><u>Crêpes Suzette</u></h2>
+                <p>This flambéed dessert will have your guests ooh-ing and aah-ing for days! Pairs perfectly with ice cream.</p>
+                <button class="view-recipe">View</button>
+                <button class="edit-recipe">Edit</button>
+                <button class="delete-recipe">Delete</button>
+                <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients"><li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+            <!-- List items for ingredients dynamically added here -->
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions"> <li>Instruction 1</li>
+                        <li>Instruction 2</li>
+                        <li>Instruction 3</li>
+            <!-- List items for instructions dynamically added here -->
+        </ol>
+        <p><strong>Cooking Time:</strong> <span class="cooking-time"></span></p>
+        <p><strong>Difficulty Level:</strong> <span class="difficulty"></span></p>
+        <p><strong>Author:</strong> <span class="author"></span></p>
+    </div>
+    </div>
+                <div class="recipe-card">
+                <img src="image6.webp" alt="">
+                <h2><u>Best Eton Mess</u></h2>
+                <p>This recipe layers meringue with a creamy mixture of macerated strawberries and raspberries in dessert glasses for a delicious sweet treat.</p>
+                <button class="view-recipe">View</button>
+               <button class="edit-recipe">Edit</button>
+                <button class="delete-recipe">Delete</button>
+                <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients"><li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+            <!-- List items for ingredients dynamically added here -->
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions"> <li>Instruction 1</li>
+                        <li>Instruction 2</li>
+                        <li>Instruction 3</li>
+            <!-- List items for instructions dynamically added here -->
+        </ol>
+        <p><strong>Cooking Time:</strong> <span class="cooking-time"></span></p>
+        <p><strong>Difficulty Level:</strong> <span class="difficulty"></span></p>
+        <p><strong>Author:</strong> <span class="author"></span></p>
+    </div>
+     </div>
+                <div class="recipe-card">
+                <img src="image7.webp" alt="">
+                <h2><u>Dairy-Free Vanilla Brownies</u></h2>
+                <p>This recipe use barley flour from Bob's Red Mill®. Add organic chocolate chips or blueberries to add sweetness and yum-ness.Ah, vanilla extract! It's the key to making almost every baked good taste homemade. Adding a teaspoon of it to your batter won't make it taste like vanilla, but it will give your brownies an extra layer of flavor.</p>
+                <button class="view-recipe">View</button>
+                <button class="edit-recipe">Edit</button>
+                <button class="delete-recipe">Delete</button>
+                <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients"><li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+            <!-- List items for ingredients dynamically added here -->
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions"> <li>Instruction 1</li>
+                        <li>Instruction 2</li>
+                        <li>Instruction 3</li>
+            <!-- List items for instructions dynamically added here -->
+        </ol>
+        <p><strong>Cooking Time:</strong> <span class="cooking-time"></span></p>
+        <p><strong>Difficulty Level:</strong> <span class="difficulty"></span></p>
+        <p><strong>Author:</strong> <span class="author"></span></p>
+    </div>
+    </div>
+                <div class="recipe-card">
+                <img src="image8.webp" alt="">
+                <h2><u>Neapolitan Whoopie Pies</u></h2>
+                <p>Not knowing what to do with some strawberry cake mix, and not wanting to make a boring cake, I came up with this recipe using some other odds and ends in my kitchen. Not only was it surprisingly tasty... it was surprisingly quick as well!Whoopie pies are actually more like a sandwich, made of two cake-like cookies with a cream center.</p>
+                <button class="view-recipe">View</button>
+                <button class="edit-recipe">Edit</button>
+                <button class="delete-recipe">Delete</button>
+                <div class="recipe-details">
+        <h3>Ingredients:</h3>
+        <ul class="ingredients"><li>Ingredient 1</li>
+                        <li>Ingredient 2</li>
+                        <li>Ingredient 3</li>
+            <!-- List items for ingredients dynamically added here -->
+        </ul>
+        <h3>Instructions:</h3>
+        <ol class="instructions"> <li>Instruction 1</li>
+                        <li>Instruction 2</li>
+                        <li>Instruction 3</li>
+            <!-- List items for instructions dynamically added here -->
+        </ol>
+        <p><strong>Cooking Time:</strong> <span class="cooking-time"></span></p>
+        <p><strong>Difficulty Level:</strong> <span class="difficulty"></span></p>
+        <p><strong>Author:</strong> <span class="author"></span></p>
+    </div>
+</div>
+            </div>
+    </section>
+    <footer>
+        <div>
+            <p>&copy; 2024 Delicious Recipes</p>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup-content">
+            <h2>Login Here</h2>
+            <img src="close.jfif" alt="close" class="close">
+            <img src="user.jfif" alt="user" class="user">
+            <input type="email" id="email" placeholder="Enter Email Here">
+            <div id="emailError" class="error"></div>
+            <input type="password" id="password" placeholder="Enter Password Here">
+            <div id="passwordError" class="error"></div>
+            <button class="btnn"><a href="#">Login</a></button>
+            <p class="link">Don't have an account<br>
+            <a href="#">Sign up</a> here</p>
+            <p class="liw">Log in with</p>
+            <div class="icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+    <div id="edit-recipe-form" class="edit-form" style="display:none;">
+        <h2>Edit Recipe</h2>
+        <form>
+            <label for="edit-name">Name:</label>
+            <input type="text" id="edit-name" name="name">
+            <label for="edit-ingredients">Ingredients:</label>
+            <textarea id="edit-ingredients" name="ingredients"></textarea>
+            <label for="edit-instructions">Instructions:</label>
+            <textarea id="edit-instructions" name="instructions"></textarea>
+            <label for="edit-cooking-time">Cooking Time:</label>
+            <input type="text" id="edit-cooking-time" name="cooking-time">
+            <label for="edit-difficulty">Difficulty Level:</label>
+            <input type="text" id="edit-difficulty" name="difficulty">
+            <label for="edit-author">Author:</label>
+            <input type="text" id="edit-author" name="author">
+            <button type="button" id="save-changes">Save Changes</button>
+            <button type="button" id="cancel-edit">Cancel</button>
+        </form>
+    </div>
+    <div id="add-recipe-form" class="add-form" style="display:none;">
+        <h2>Add New Recipe</h2>
+        <form>
+            <label for="add-name">Name:</label>
+            <input type="text" id="add-name" name="name">
+            <label for="add-ingredients">Ingredients:</label>
+            <textarea id="add-ingredients" name="ingredients"></textarea>
+            <label for="add-instructions">Instructions:</label>
+            <textarea id="add-instructions" name="instructions"></textarea>
+            <label for="add-cooking-time">Cooking Time:</label>
+            <input type="text" id="add-cooking-time" name="cooking-time">
+            <label for="add-difficulty">Difficulty Level:</label>
+            <input type="text" id="add-difficulty" name="difficulty">
+            <label for="add-author">Author:</label>
+            <input type="text" id="add-author" name="author">
+            <button type="button" id="save-new-recipe">Save</button>
+            <button type="button" id="cancel-add">Cancel</button>
+        </form>
+    </div>
+    <div class="view-recipe-form" style="display: none;">
+        <!-- View recipe details will be displayed here -->
+        <h2>Recipe Details</h2>
+        <form id="view-recipe-form">
+            <img src="close.jfif" alt="close" class="close">
+            <!-- Form fields to display recipe details -->
+            <label for="view-name">Name:</label>
+            <input type="text" id="view-name" readonly>
+            <label for="view-ingredients">Ingredients:</label>
+            <textarea id="view-ingredients" readonly></textarea>
+            <label for="view-instructions">Instructions:</label>
+            <textarea id="view-instructions" readonly></textarea>
+            <label for="view-cooking-time">Cooking Time:</label>
+            <input type="text" id="view-cooking-time" readonly>
+            <label for="view-difficulty">Difficulty Level:</label>
+            <input type="text" id="view-difficulty" readonly>
+            <label for="view-author">Author:</label>
+            <input type="text" id="view-author" readonly>
+
+        </form>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GOOGLE_ANALYTICS_ID"></script>
+</body>
+</html>

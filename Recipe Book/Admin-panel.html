@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPanel</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Delecious Recipes</h1>
+            <nav>
+                <div class="menu-Icon">&#9776;</div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    </li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="Admin-panel.html" class="button">AdminPanel</a></li>
+
+                </ul>
+            </nav>
+         </div>   
+    </header>
+    <section id="admin-panel">
+            <nav>
+                <ul>
+                    <li><a href="#user-management">User Management</a></li>
+                    <li><a href="#category-management">Category & Tag Management</a></li>
+                    <li><a href="#analytics">Analytics & Reporting</a></li>
+                    <li><a href="#content-moderation">Content Moderation</a></li>
+                    <li><a href="#settings">Settings & Customization</a></li>
+                    <li><a href="#backup">Backup & Restore</a></li>
+                    <li><a href="#notifications">Notifications & Alerts</a></li>
+                </ul>
+            </nav>
+
+            <div id="admin-sections">
+
+                <section id="user-management">
+                    <h3>User Management</h3>
+                    <div id="user-list">
+                        <!-- List of users for viewing profiles and managing permissions -->
+                    </div>
+                </section>
+
+                <section id="category-management">
+                    <h3>Category & Tag Management</h3>
+                    <form id="category-form">
+                        <input type="text" id="category-name" placeholder="Category Name" required>
+                        <button type="submit">Add/Update Category</button>
+                    </form>
+                    <form id="tag-form">
+                        <input type="text" id="tag-name" placeholder="Tag Name" required>
+                        <button type="submit">Add/Update Tag</button>
+                    </form>
+                    <div id="category-list">
+                        <!-- List of categories for editing/deleting -->
+                    </div>
+                    <div id="tag-list">
+                        <!-- List of tags for editing/deleting -->
+                    </div>
+                </section>
+
+                <section id="analytics">
+                    <h3>Analytics & Reporting</h3>
+                    <div id="analytics-data">
+                        <!-- Display recipe usage statistics and user activity -->
+                    </div>
+                </section>
+
+                <section id="content-moderation">
+                    <h3>Content Moderation</h3>
+                    <div id="submitted-recipes">
+                        <!-- Queue of user-submitted recipes for review -->
+                    </div>
+                    <div id="comments-reviews">
+                        <!-- List of comments and reviews for moderation -->
+                    </div>
+                </section>
+
+                <section id="settings">
+                    <h3>Settings & Customization</h3>
+                    <form id="settings-form">
+                        <input type="text" id="site-name" placeholder="Site Name" required>
+                        <input type="file" id="logo-upload">
+                        <input type="color" id="primary-color" placeholder="Primary Color">
+                        <input type="color" id="secondary-color" placeholder="Secondary Color">
+                        <button type="submit">Save Settings</button>
+                    </form>
+                </section>
+
+                <section id="backup">
+                    <h3>Backup & Restore</h3>
+                    <button id="backup-data">Backup Data</button>
+                    <button id="restore-data">Restore Data</button>
+                </section>
+
+                <section id="notifications">
+                    <h3>Notifications & Alerts</h3>
+                    <div id="notifications-list">
+                        <!-- List of notifications and alerts -->
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <p>&copy; 2024 Delicious Recipes</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+    <script src="addrecipe.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+</body>
+</html>
